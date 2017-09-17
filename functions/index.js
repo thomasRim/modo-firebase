@@ -10,12 +10,10 @@ var home = require('./routes/home');
 var products = require('./routes/products');
 var services = require('./routes/services');
 var receipts = require('./routes/receipts');
-var messages = require('./routes/messages');
 
 app.use('/home',home);
 app.use('/products',products);
 app.use('/services',services);
 app.use('/receipts',receipts);
-app.use('/messages',messages);
 
 exports.api = functions.https.onRequest(app);

@@ -6,24 +6,17 @@ var database = admin.database();
 
 // Endpoint function for fetching request that return all Receipts, Services, Messages and Products
 router.get('/', (req, resp) => {
-    var result = [];
+    var result = new Map();
     database.ref('/receipts').on('value', recCall => {
-        result = result.concat(recCall.val());
-
+        result = Object.assign(result,recCall.val())
         database.ref('/services').on('value', servCall => {
-            result = result.concat(servCall.val());
-
+            result = Object.assign(result,servCall.val())
             database.ref('/products').on('value', prodCall => {
-                result = result.concat(prodCall.val());
-
-                database.ref('/messages').on('value', messCall => {
-                    result = result.concat(messCall.val());
-
-                   resp.status(200).send(result);
-               });
-            });
-        });
-    });
-});
+                result = Object.assign(result, prodCall.val())
+                resp.status(200).send(result)
+            })
+        })
+    })
+})
 
 module.exports = router;
