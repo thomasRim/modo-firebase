@@ -1,0 +1,29 @@
+[debug] [2017-10-06T15:25:07.948Z] ----------------------------------------------------------------------
+[debug] [2017-10-06T15:25:07.952Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions:test
+[debug] [2017-10-06T15:25:07.953Z] CLI Version:   3.13.1
+[debug] [2017-10-06T15:25:07.953Z] Platform:      darwin
+[debug] [2017-10-06T15:25:07.953Z] Node Version:  v6.11.1
+[debug] [2017-10-06T15:25:07.954Z] Time:          Fri Oct 06 2017 18:25:07 GMT+0300 (EEST)
+[debug] [2017-10-06T15:25:07.954Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-06T15:25:07.975Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-06T15:25:07.976Z] > authorizing via signed-in user
+[debug] [2017-10-06T15:25:07.979Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fireappmodobase  
+ Fri Oct 06 2017 18:25:07 GMT+0300 (EEST)
+[debug] [2017-10-06T15:25:08.798Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-06T15:25:08.799Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fireappmodobase/tokens  
+ Fri Oct 06 2017 18:25:08 GMT+0300 (EEST)
+[debug] [2017-10-06T15:25:11.657Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/vevdokimov/Projects/Personal/modo-firebase'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2017-10-06T15:25:12.172Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/fireappmodobase  
+ Fri Oct 06 2017 18:25:12 GMT+0300 (EEST)
+[debug] [2017-10-06T15:25:12.173Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/fireappmodobase/apiKeys  
+ Fri Oct 06 2017 18:25:12 GMT+0300 (EEST)
+[debug] [2017-10-06T15:25:12.617Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-06T15:25:13.414Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: test: http://localhost:5000/fireappmodobase/us-central1/test
+[info] ✔  functions: new: http://localhost:5000/fireappmodobase/us-central1/new
+[info] ✔  functions: api: http://localhost:5000/fireappmodobase/us-central1/api
